@@ -1,7 +1,7 @@
 # PLM-VF  
 The emergence of novel infectious diseases and the novel pathogenic properties of familiar diseases pose a significant global challenge. Here, we introduced a deep learning-based method to predict VFs, which utilizes embeddings from the ProtT5 and ESM-1b models.  
 * ProtT5: https://huggingface.co/Rostlab/prot_t5_xl_uniref50
-* ESM--1b: https://huggingface.co/facebook/esm1b_t33_650M_UR50S
+* ESM-1b: https://huggingface.co/facebook/esm1b_t33_650M_UR50S
 # Package requirement  
   pytorch==2.1.2  
   scikit-learn==1.5.1  
