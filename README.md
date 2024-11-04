@@ -35,7 +35,7 @@ TP: 469, FP: 43, TN: 533, FN: 107
 Acc: 0.8698, Recall: 0.8142, Spe: 0.9253, Pre: 0.9160, Auroc: 0.9406, F1: 0.8621, MCC: 0.7442  
 Results saved to results\output.csv  
 ```
-After running the script, the `output.csv` file will be generated in the specified output directory. Here are the results for the first three samples from the `output.csv`:  
+The `output.csv` file will be generated in the specified output directory. Here are the results for the first three samples from the `output.csv`:  
 ```
 Labels	Predictions
 0	0
@@ -64,10 +64,12 @@ Following the general usage guidelines above, here’s a specific example of how
 ```
 python prediction.py -m model/model.pt -i data/input.pt -o results/output.csv
 ```
-After running the script, the `output.csv` file will be generated in the specified output directory. Here are the results for the first three samples from the `output.csv`:  
+After running the script, the `output.csv` file will be generated in the specified output directory. Here are the results for the `output.csv`:  
 ```
 	Predictions
 0	0
 1	0
 2	0
 ```
+# Acknowledge  
+The training and test sets come from DeepVF (DOI: 10.1093/bib/bbaa125)
