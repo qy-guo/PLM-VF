@@ -15,14 +15,14 @@ The processed test dataset `test_data.pt` can be found here: (Google Drive URL).
 ## Usage
 Once your inputs are prepared, you can proceed to testing using the provided `test.py` script.
 
-The `test.py` script is designed to accept arguments for the model file, test data, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
+The `test.py` script is designed to accept arguments for the model file, test data path, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
 ```
 python test.py -m [path_to_model] -i [path_to_test_data] -o [path_to_output]
 ```
 Replace `[path_to_model]`, `[path_to_test_data]`, and `[path_to_output]` with the actual paths to your model file, test data file, and the output directory where you want the predictions CSV file saved, respectively.  
 * `-m`, `--model_path`: Specifies the path to the model file. This argument is required.
 * `-i`, `--test_data_path`: Specifies the path to the test data file. This argument is required.
-* `-o`, `--output_path`: Specifies the path for saving the predictions CSV file. This argument is required.
+* `-o`, `--output_path`: Specifies the path for saving the output CSV file. This argument is required.
 
 ## Example  
 Following the general usage guidelines above, here’s a specific example of how to execute the `test.py` script: 
@@ -48,4 +48,15 @@ Labels	Predictions
 First, you need to generate the input for the samples using the ProtT5 and ESM1b models. The input should be a tensor of dimension 2304, where:  
 * Dimensions 1 to 1024 are the ProtT5 embeddings of the sample.
 * Dimensions 1025 to 2304 are the ESM-1b embeddings of the sample.
+
+## Usage  
+Once your inputs are prepared, you can proceed to testing using the provided `prediction.py` script.  
+The `prediction.py` script is designed to accept arguments for the model file, input path, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
+```
+python prediction.py -m [path_to_model] -i [path_to_input] -o [path_to_output]
+```
+Replace `[path_to_model]`, `[path_to_input]`, and `[path_to_output]` with the actual paths to your model file, input directory, and the output directory where you want the predictions CSV file saved, respectively.  
+* `-m`, `--model_path`: Specifies the path to the model file. This argument is required.
+* `-i`, `--test_data_path`: Specifies the path to the input file. This argument is required.
+* `-o`, `--output_path`: Specifies the path for saving the output CSV file. This argument is required.
 
