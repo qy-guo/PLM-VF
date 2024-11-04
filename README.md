@@ -13,7 +13,6 @@ First, you need to generate the input for the test dataset samples using the Pro
 * Dimensions 2 to 1025 are the ProtT5 embeddings of the sample.
 * Dimensions 1026 to 2305 are the ESM-1b embeddings of the sample.
 
-The processed test dataset `test_data.pt` can be found here: (Google Drive URL).  
 ## Usage
 Once your inputs are prepared, you can proceed to testing using the provided `test.py` script.
 The `test.py` script is designed to accept arguments for the model file, test data path, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
