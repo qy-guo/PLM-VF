@@ -7,11 +7,6 @@ The emergence of novel infectious diseases and the novel pathogenic properties o
   scikit-learn==1.5.1  
   pandas==2.2.2  
 # Test on the model  
-## Preparing the input data  
-First, you need to generate the input for the test dataset samples using the ProtT5 and ESM1b models. The input should be a tensor of dimension 2305, where:  
-* The first dimension represents the sample labels.
-* Dimensions 2 to 1025 are the ProtT5 embeddings of the sample.
-* Dimensions 1026 to 2305 are the ESM-1b embeddings of the sample.
 
 ## Usage
 Once your inputs are prepared, you can proceed to testing using the provided `test.py` script.
@@ -44,10 +39,6 @@ Labels	Predictions
 0	0
 ```
 # Use PLM-VF to predict VFs  
-## Preparing the input data  
-First, you need to generate the input for the samples using the ProtT5 and ESM1b models. The input should be a tensor of dimension 2304, where:  
-* Dimensions 1 to 1024 are the ProtT5 embeddings of the sample.
-* Dimensions 1025 to 2304 are the ESM-1b embeddings of the sample.
 
 ## Usage  
 Once your inputs are prepared, you can proceed to predictions using the provided `prediction.py` script.
