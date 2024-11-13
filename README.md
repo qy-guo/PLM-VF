@@ -1,7 +1,7 @@
 # PLM-VF: A Novel Predictor for Virulence Factors Based on Multi-Scale CNN and Protein Language Models  
 The emergence of novel infectious diseases and the novel pathogenic properties of familiar diseases pose a significant global challenge. This issue is intricately linked to virulence factors (VFs) produced by pathogens. Here, we introduced a deep learning-based approach for predicting VFs that utilizes embeddings from the ProtT5 and ESM-1b models.  
 ![image](figure/FIG1.png)  
-For detailed guidance on generating protein embedding representations, please refer to the official documentation available at the following website:  
+For detailed guidance on generating protein embedding representations, please refer to the official documentation available at the following websites:  
 * ProtT5: https://huggingface.co/Rostlab/prot_t5_xl_uniref50
 * ESM-1b: https://github.com/facebookresearch/esm
 # Package requirement  
