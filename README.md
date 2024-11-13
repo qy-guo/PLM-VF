@@ -42,7 +42,7 @@ Labels	Predictions
 # Use PLM-VF to predict VFs  
 
 ## Usage  
-Once your inputs are prepared, you can proceed to predictions using the provided `prediction.py` script.
+Once the ProtT5 and ESM-1b embedding representations of the protein sequences are prepared, you can proceed to predictions using the provided `prediction.py` script.
 The `prediction.py` script is designed to accept arguments for the model file, input path, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
 ```
 python prediction.py -m [path_to_model] -i [path_to_input] -o [path_to_output]
