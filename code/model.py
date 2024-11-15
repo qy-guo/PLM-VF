@@ -63,7 +63,7 @@ class Net(nn.Module):
         pro2 = self.maxpool(pro2.permute(0, 2, 1))
         pro3 = self.maxpool(pro3.permute(0, 2, 1))
         pro_out = torch.concat([pro1, pro2, pro3], dim=-1)
-        # ESM1-b
+        # ESM-1b
         esm1b = esm1b.permute(0, 2, 1)
         esm1b1 = self.esm1b_cnn1_3(esm1b)
         esm1b2 = self.esm1b_cnn1_5(esm1b)
