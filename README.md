@@ -16,12 +16,13 @@ For detailed guidance on generating protein embedding representations, please re
 Once your inputs are prepared, you can proceed to testing using the provided `test.py` script.
 The `test.py` script is designed to accept arguments for the model file, test data path, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
 ```
-python test.py -m [path_to_model] -i [path_to_test_data] -o [path_to_output]
+python test.py -m [path_to_model] -i [path_to_test_data] -o [path_to_output] -p [threshold] (Optional)
 ```
-Replace `[path_to_model]`, `[path_to_test_data]`, and `[path_to_output]` with the actual paths to your model file, test data file, and the output directory where you want the predictions CSV file saved, respectively.  
+Replace `[path_to_model]`, `[path_to_test_data]`, and `[path_to_output]` with the actual paths to your model file, test data file, and the output directory where you want the predictions CSV file saved, respectively. The -p option is optional and allows you to set a custom threshold for binary classification.  
 * `-m`, `--model_path`: Specifies the path to the model file. This argument is required.
 * `-i`, `--test_data_path`: Specifies the path to the test data file. This argument is required.
 * `-o`, `--output_path`: Specifies the path for saving the output CSV file. This argument is required.
+* `-p`, `--threshold`: (Optional) Sets the threshold for binary classification. Predictions with a probability greater than this value will be classified as the positive class. Default is 0.5.
 
 ## Example  
 Following the general usage guidelines above, here’s a specific example of how to execute the `test.py` script: 
@@ -48,12 +49,13 @@ Labels	Predictions
 Once the ProtT5 and ESM-1b embedding representations of the protein sequences are prepared, you can proceed to predictions using the provided `prediction.py` script.
 The `prediction.py` script is designed to accept arguments for the model file, input path, and output path. To run the script, you must specify each of these parameters using the appropriate flags. Below is a general format for running the script:
 ```
-python prediction.py -m [path_to_model] -i [path_to_input] -o [path_to_output]
+python prediction.py -m [path_to_model] -i [path_to_input] -o [path_to_output] -p [threshold] (Optional)
 ```
-Replace `[path_to_model]`, `[path_to_input]`, and `[path_to_output]` with the actual paths to your model file, input directory, and the output directory where you want the predictions CSV file saved, respectively.  
+Replace `[path_to_model]`, `[path_to_input]`, and `[path_to_output]` with the actual paths to your model file, input directory, and the output directory where you want the predictions CSV file saved, respectively. The -p option is optional and allows you to set a custom threshold for binary classification.  
 * `-m`, `--model_path`: Specifies the path to the model file. This argument is required.
 * `-i`, `--test_data_path`: Specifies the path to the input file. This argument is required.
 * `-o`, `--output_path`: Specifies the path for saving the output CSV file. This argument is required.
+* `-p`, `--threshold`: (Optional) Sets the threshold for binary classification. Predictions with a probability greater than this value will be classified as the positive class. Default is 0.5.
 
 ## Example  
 Following the general usage guidelines above, here’s a specific example of how to execute the `prediction.py` script: 
