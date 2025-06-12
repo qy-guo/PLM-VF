@@ -68,4 +68,4 @@ After running the script, the `output.csv` file will be generated in the specifi
 2	0
 ```
 # Acknowledge  
-The training and test sets come from DeepVF (DOI: 10.1093/bib/bbaa125).
+The training and test sets come from DeepVF (DOI: 10.1093/bib/bbaa125). We sincerely thank the DeepVF team for providing valuable resources and methodological insights that have supported our work.
