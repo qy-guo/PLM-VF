@@ -15,7 +15,7 @@ def main(args):
     model.to(device)
     model.eval()
 
-    test_label_data = torch.load(args.test_data_path)
+    test_label_data = torch.load(args.test_data_path, weights_only=False)
     X_test = test_label_data[:, 1:]
     y_test = test_label_data[:, 0]
 
