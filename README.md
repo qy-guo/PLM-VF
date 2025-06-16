@@ -6,9 +6,9 @@ For detailed guidance on generating protein embedding representations, please re
 * ESM-1b: https://github.com/facebookresearch/esm
 # Package requirement  
 ```
-  pytorch==2.1.2  
+  pytorch==2.5.1  
   scikit-learn==1.5.1  
-  pandas==2.2.2
+  pandas==1.5.3
 ```
 # Test on the model  
 
