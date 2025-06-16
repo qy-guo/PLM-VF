@@ -10,7 +10,7 @@ def main(args):
     print(f"{'GPU' if device.type == 'cuda' else 'CPU'} Available")
 
     model = Net()
-    model = torch.load(args.model_path)
+    model = torch.load(args.model_path, weights_only=False)
     model.to(device)
     model.eval()
 
