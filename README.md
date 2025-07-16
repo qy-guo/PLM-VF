@@ -4,6 +4,7 @@ The emergence of novel infectious diseases and the novel pathogenic properties o
 For detailed guidance on generating protein embedding representations, please refer to the official documentation available at the following websites:  
 * ProtT5: https://huggingface.co/Rostlab/prot_t5_xl_uniref50
 * ESM-1b: https://github.com/facebookresearch/esm
+Furthermore, we have made the model more accessible to users by providing the complete end-to-end prediction code on [Google Colab repository](https://drive.google.com/drive/folders/1OJKsV-eaERdIYiBgGQTUszQzaZnCFP7u?usp=sharing) .This allows users to upload their sequence files and obtain prediction results without the need for manually setting up a Python environment. The code includes steps to generate embeddings using ESM-1b and ProtT5, perform model predictions, and save the results in a downloadable CSV file.
 # Package requirement  
 ```
   pytorch==2.5.1  
