@@ -1,4 +1,4 @@
-# PLM-VF: A Novel Predictor for Virulent Proteins in Bacterial Pathogens Based on Multi-Scale CNN and Protein Language Models  
+# PLM-VF: A novel predictor for virulent proteins in bacterial pathogens based on multi-scale CNN and protein language models  
 The emergence of novel infectious diseases and the novel pathogenic properties of familiar diseases pose a significant global challenge. This issue is intricately linked to virulence factors (VFs) produced by pathogens. Here, we introduced a deep learning-based approach for predicting VFs that utilizes embeddings from the ProtT5 and ESM-1b models.  
 ![image](figure/FIG1.png)  
 For detailed guidance on generating protein embedding representations, please refer to the official documentation available at the following websites:  
